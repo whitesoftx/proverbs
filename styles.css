@@ -22,7 +22,7 @@ body {
     #dd1f1f
   ); /* Gradient background */
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
   width: 450px;
   height: 450px;
@@ -45,9 +45,8 @@ body {
   background-color: #000;
   color: #f3f5f3;
   padding: 20px;
-  /* border-radius: 10px; */
   text-align: center;
-  font-size: 32px;
+  font-size: 36px;
   width: 75%;
   height: 65%;
   position: absolute;
@@ -56,31 +55,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.btn {
-  background-color: #181717;
-  color: #fff;
-  border: none;
-  padding: 12px 50px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px; /* Adjust margin top */
-}
-
-.btn:hover {
-  background-color: #800080;
-  color: #ffffff;
-  border: none;
-}
-
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .screenshot-btn,
-.share-btn {
+.share-btn,
+.btn {
   background-color: #800080;
   color: #fff;
   border: none;
@@ -92,14 +75,29 @@ body {
 }
 
 .screenshot-btn:hover,
-.share-btn:hover {
+.share-btn:hover,
+.btn:hover {
   background-color: #181717;
 }
 
 .advice-text {
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 10px;
   line-height: 1.8rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #800080;
 }
 
 @media (min-width: 768px) {

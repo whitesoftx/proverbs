@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ola White Quote Generator</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="olawhite.png" type="image/png" />
   </head>
   <body>
     <div class="container">
@@ -16,15 +17,21 @@
         </div>
       </div>
       <div class="button-container">
-        <button id="screenshotBtn" class="screenshot-btn">
-          Take Screenshot
-        </button>
+        <button id="screenshotBtn" class="screenshot-btn">Copy</button>
+
+        <button id="newQuoteBtn" class="btn">New Proverb</button>
         <button id="shareBtn" class="share-btn">Share</button>
       </div>
-
-      <button id="newQuoteBtn" class="btn">New Proverb</button>
     </div>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script type="module" src="script.js"></script>
+    <footer>
+      © <span id="currentYear"></span> - Built with 🧡 by
+      <a href="https://olawhite.com" target="_blank">Ola White</a>
+    </footer>
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
