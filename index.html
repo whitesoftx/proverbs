@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ola White Quote Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quote-wrapper" id="quoteWrapper">
+        <img src="olawhite.png" alt="Ola White Icon" class="icon" />
+        <div class="quote-container" id="quoteContainer">
+          <div id="quoteText" class="quote-text"></div>
+          <div id="adviceText" class="advice-text"></div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="screenshotBtn" class="screenshot-btn">
+          Take Screenshot
+        </button>
+        <button id="shareBtn" class="share-btn">Share</button>
+      </div>
+
+      <button id="newQuoteBtn" class="btn">New Proverb</button>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
