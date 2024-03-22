@@ -10,22 +10,20 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  position: relative;
-  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .quote-wrapper {
-  background: linear-gradient(
-    135deg,
-    #800080,
-    #dd1f1f
-  ); /* Gradient background */
+  background: linear-gradient(135deg, #800080, #dd1f1f);
   padding: 20px;
   margin-bottom: 10px;
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 
 .icon {
@@ -35,10 +33,8 @@ body {
   transform: translate(-50%, 15%);
   width: 70px;
   height: 70px;
-  border: dotted 1px #1e1f1e;
-  border-radius: 100px;
   padding: 1px;
-  background-color: #fff;
+  z-index: 1;
 }
 
 .quote-container {
@@ -46,13 +42,17 @@ body {
   color: #f3f5f3;
   padding: 20px;
   text-align: center;
-  font-size: 36px;
-  width: 75%;
-  height: 65%;
+  font-size: 32px;
+  width: 80%;
+  height: 78%;
   position: absolute;
-  top: 60%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .button-container {
@@ -71,7 +71,7 @@ body {
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 0 2px;
 }
 
 .screenshot-btn:hover,
@@ -83,16 +83,16 @@ body {
 .advice-text {
   font-size: 22px;
   margin-top: 10px;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
+  position: static;
+  width: 100%;
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
+  /* margin-top: 20px; */
 }
 
 footer a {
@@ -100,9 +100,14 @@ footer a {
   color: #800080;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .quote-container {
+    font-size: 24px;
+    top: 55%;
+    height: 75%;
+  }
+
+  .advice-text {
+    font-size: 18px;
   }
 }
